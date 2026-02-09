@@ -1,0 +1,990 @@
+<html lang="es" class="scroll-smooth"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hernandez HVAC | Miami Air Conditioning Services</title>
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Iconify -->
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+<!-- Lucide Icons (Requested in Trust Badges) -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+/* Base Settings */
+body { font-family: 'Inter', sans-serif; }
+h1, h2, h3, h4, h5, h6, .font-heading { font-family: 'Outfit', sans-serif; }
+/* Background Patterns */
+.bg-grid-pattern {
+background-image: linear-gradient(to right, rgba(44, 95, 93, 0.05) 1px, transparent 1px),
+linear-gradient(to bottom, rgba(44, 95, 93, 0.05) 1px, transparent 1px);
+background-size: 80px 80px;
+}
+.bg-dots-pattern {
+background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0);
+background-size: 40px 40px;
+}
+/* Animations */
+@keyframes scroll {
+0% { transform: translateX(0); }
+100% { transform: translateX(-50%); }
+}
+.animate-scroll {
+animation: scroll 40s linear infinite;
+}
+.animate-scroll:hover {
+animation-play-state: paused;
+}
+@keyframes marquee {
+0% { transform: translateX(100%); }
+100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+animation: marquee 40s linear infinite;
+white-space: nowrap;
+}
+.fade-in-up {
+opacity: 0;
+transform: translateY(20px);
+transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in-up.visible {
+opacity: 1;
+transform: translateY(0);
+}
+/* Hero Underline Animation */
+.hero-highlight {
+background: linear-gradient(to top, #F28C38 0%, #F28C38 100%);
+background-size: 100% 30%;
+background-repeat: no-repeat;
+background-position: left bottom;
+transition: background-size 0.5s ease;
+}
+/* Accordion */
+.accordion-content {
+transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+max-height: 0;
+opacity: 0;
+overflow: hidden;
+}
+.accordion-content.active {
+opacity: 1;
+}
+/* Map Markers */
+.map-marker {
+transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.map-marker:hover {
+transform: scale(1.2) translateY(-5px);
+z-index: 50;
+}
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #FAF7F2; }
+::-webkit-scrollbar-thumb { background: #D4654F; border-radius: 4px; }
+/* Language Support */
+.lang-hidden { display: none; }
+/* Brand Carousel Animation */
+@keyframes scroll-brands {
+0% { transform: translateX(0); }
+100% { transform: translateX(-50%); }
+}
+.animate-scroll-brands {
+animation: scroll-brands 30s linear infinite;
+display: flex;
+width: max-content;
+}
+.animate-scroll-brands:hover {
+animation-play-state: paused;
+}
+
+/* Hero Underline Animation */
+.hero-underline-animated {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-underline-animated::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 8px;
+    background: #F28C38;
+    transition: width 1s ease-out;
+}
+
+.hero-underline-animated.animate::after {
+    width: 100%;
+}
+
+</style>
+<link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">.font-geist { font-family: 'Geist', sans-serif !important; }</style><link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-roboto">.font-roboto { font-family: 'Roboto', sans-serif !important; }</style><link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-montserrat">.font-montserrat { font-family: 'Montserrat', sans-serif !important; }</style><link id="all-fonts-link-font-poppins" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-poppins">.font-poppins { font-family: 'Poppins', sans-serif !important; }</style><link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"><style id="all-fonts-style-font-playfair">.font-playfair { font-family: 'Playfair Display', serif !important; }</style><link id="all-fonts-link-font-instrument-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-instrument-serif">.font-instrument-serif { font-family: 'Instrument Serif', serif !important; }</style><link id="all-fonts-link-font-merriweather" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"><style id="all-fonts-style-font-merriweather">.font-merriweather { font-family: 'Merriweather', serif !important; }</style><link id="all-fonts-link-font-bricolage" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-bricolage">.font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }</style><link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-jakarta">.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }</style><link id="all-fonts-link-font-manrope" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-manrope">.font-manrope { font-family: 'Manrope', sans-serif !important; }</style><link id="all-fonts-link-font-space-grotesk" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-space-grotesk">.font-space-grotesk { font-family: 'Space Grotesk', sans-serif !important; }</style><link id="all-fonts-link-font-work-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-work-sans">.font-work-sans { font-family: 'Work Sans', sans-serif !important; }</style><link id="all-fonts-link-font-pt-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-pt-serif">.font-pt-serif { font-family: 'PT Serif', serif !important; }</style><link id="all-fonts-link-font-geist-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist-mono">.font-geist-mono { font-family: 'Geist Mono', monospace !important; }</style><link id="all-fonts-link-font-space-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-space-mono">.font-space-mono { font-family: 'Space Mono', monospace !important; }</style><link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-quicksand">.font-quicksand { font-family: 'Quicksand', sans-serif !important; }</style><link id="all-fonts-link-font-nunito" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-nunito">.font-nunito { font-family: 'Nunito', sans-serif !important; }</style><link id="all-fonts-link-font-newsreader" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..800&amp;display=swap"><style id="all-fonts-style-font-newsreader">.font-newsreader { font-family: 'Newsreader', serif !important; }</style><link id="all-fonts-link-font-google-sans-flex" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-google-sans-flex">.font-google-sans-flex { font-family: 'Google Sans Flex', sans-serif !important; }</style><link id="all-fonts-link-font-oswald" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-oswald">.font-oswald { font-family: 'Oswald', sans-serif !important; }</style><link id="all-fonts-link-font-dm-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-dm-sans">.font-dm-sans { font-family: 'DM Sans', sans-serif !important; }</style><link id="all-fonts-link-font-cormorant" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-cormorant">.font-cormorant { font-family: 'Cormorant Garamond', serif !important; }</style></head>
+<body class="bg-[#FAF7F2] text-[#2B2B2B] antialiased overflow-x-hidden selection:bg-[#D4654F] selection:text-white">
+
+    <!-- FOMO BAR -->
+    <div class="bg-[#F28C38] text-white h-10 flex items-center justify-center relative overflow-hidden z-[1000] shadow-sm">
+        <div class="absolute inset-0 flex items-center overflow-hidden">
+            <div class="animate-marquee font-heading font-semibold text-sm tracking-wide w-full text-center">
+                <span data-lang="es" class="">🔥 PROMOCIÓN: 10% de descuento en mantenimiento preventivo — Válido hasta fin de mes</span>
+                <span data-lang="en" class="lang-hidden">🔥 PROMO: 10% OFF Preventive Maintenance — Valid until end of month</span>
+            </div>
+        </div>
+        <button class="absolute right-4 top-1/2 -translate-y-1/2 hover:bg-white/20 rounded-full p-1 transition-colors" onclick="this.parentElement.style.display='none'">
+            <iconify-icon icon="solar:close-circle-linear" width="20" class="text-white"></iconify-icon>
+        </button>
+    </div>
+
+    <!-- HEADER -->
+    <header id="main-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 transition-all duration-300 h-20 flex items-center shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center w-full">
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="bg-[#D4654F] p-2 rounded-lg group-hover:scale-105 transition-transform">
+                    <iconify-icon icon="solar:wrench-linear" width="24" class="text-white"></iconify-icon>
+                </div>
+                <span class="font-heading font-bold text-xl tracking-tight text-[#2B2B2B]">
+                    HERNANDEZ <span class="text-[#2C5F5D]">HVAC</span>
+                </span>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="#" class="text-sm font-medium text-[#2B2B2B] hover:text-[#D4654F] transition-colors" data-lang="es">Inicio</a><a href="#" class="text-sm font-medium text-[#2B2B2B] hover:text-[#D4654F] transition-colors lang-hidden" data-lang="en">Home</a>
+                <a href="#services" class="text-sm font-medium text-[#2B2B2B] hover:text-[#D4654F] transition-colors" data-lang="es">Servicios</a><a href="#services" class="text-sm font-medium text-[#2B2B2B] hover:text-[#D4654F] transition-colors lang-hidden" data-lang="en">Services</a>
+                <a href="#pricing" class="text-sm font-medium text-[#2B2B2B] hover:text-[#D4654F] transition-colors" data-lang="es">Precios</a><a href="#pricing" class="text-sm font-medium text-[#2B2B2B] hover:text-[#D4654F] transition-colors lang-hidden" data-lang="en">Pricing</a>
+                <a href="#map" class="text-sm font-medium text-[#2B2B2B] hover:text-[#D4654F] transition-colors" data-lang="es">Áreas</a><a href="#map" class="text-sm font-medium text-[#2B2B2B] hover:text-[#D4654F] transition-colors lang-hidden" data-lang="en">Areas</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button id="langToggle" class="hidden md:flex hover:border-[#2C5F5D] transition-colors cursor-pointer bg-gray-50 border-gray-200 border rounded-full pt-1.5 pr-3 pb-1.5 pl-3 gap-x-2 gap-y-2 items-center">
+                    <span class="text-xs font-semibold text-[#2C5F5D]">ES</span>
+                    <div class="w-px h-3 bg-gray-300"></div>
+                    <span class="text-xs font-medium text-gray-400 hover:text-[#2B2B2B]">EN</span>
+                </button>
+
+                <a href="tel:+13054822349" class="hidden md:flex items-center gap-2 bg-[#D4654F] hover:bg-[#b5523f] text-white px-5 py-2.5 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg group">
+                    <iconify-icon icon="solar:phone-calling-linear" width="20" class="group-hover:animate-pulse"></iconify-icon>
+                    <span class="font-heading font-semibold text-sm uppercase tracking-wide" data-lang="es">Llama Ahora</span>
+                    <span class="font-heading font-semibold text-sm uppercase tracking-wide lang-hidden" data-lang="en">Call Now</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="">
+       <!-- HERO SECTION -->
+<section class="relative min-h-[calc(100vh-100px)] bg-[#FAF7F2] bg-grid-pattern flex items-center overflow-hidden pb-12">
+    <div class="container mx-auto px-6 py-12 lg:py-0 h-full">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center h-full">
+            
+            <div class="lg:col-span-7 flex flex-col justify-center space-y-8 fade-in-up visible">
+                <div class="inline-flex items-center gap-2 bg-[#2C5F5D]/10 border border-[#2C5F5D]/20 px-3 py-1.5 rounded-full w-fit">
+                    <div class="w-2 h-2 rounded-full bg-[#2C5F5D] animate-pulse"></div>
+                    <span class="text-[#2C5F5D] text-xs font-semibold uppercase tracking-wider" data-lang="es">Disponible 24/7 en Miami</span>
+                    <span class="text-[#2C5F5D] text-xs font-semibold uppercase tracking-wider lang-hidden" data-lang="en">Available 24/7 in Miami</span>
+                </div>
+
+                <div class="space-y-4">
+                    <h1 class="font-heading font-bold text-5xl lg:text-7xl text-[#2B2B2B] leading-[1.1] tracking-tight">
+    <span data-lang="es">
+        Aire Acondicionado<br>
+        Que Funciona<br>
+        Cuando<br>
+        <span class="hero-underline-animated">Más lo Necesitas.</span>
+    </span>
+    <span data-lang="en" class="lang-hidden">
+        Air Conditioning<br>
+        That Works<br>
+        When You<br>
+        <span class="hero-underline-animated">Need It Most.</span>
+    </span>
+</h1>
+                    <h2 class="font-heading font-semibold text-xl lg:text-2xl text-[#2C5F5D] tracking-tight" data-lang="es">Servicio honesto, precios justos, sin trucos ocultos.</h2>
+                    <h2 class="font-heading font-semibold text-xl lg:text-2xl text-[#2C5F5D] tracking-tight lang-hidden" data-lang="en">Honest service, fair prices, no hidden tricks.</h2>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#contact" class="flex items-center justify-center gap-3 bg-[#F28C38] hover:bg-[#d97526] text-white px-8 py-4 rounded-xl shadow-lg shadow-[#F28C38]/30 transition-all duration-200 transform hover:scale-[1.02] active:scale-95 group">
+                        <iconify-icon icon="solar:phone-calling-linear" width="24" class="animate-[tada_1s_ease-in-out_infinite]"></iconify-icon>
+                        <span class="font-heading font-semibold text-lg uppercase tracking-wide" data-lang="es">Llama Ahora</span>
+                        <span class="font-heading font-semibold text-lg uppercase tracking-wide lang-hidden" data-lang="en">Call Now</span>
+                    </a>
+                    <a href="#services" class="flex items-center justify-center gap-3 bg-white border-2 border-[#2C5F5D] text-[#2C5F5D] hover:bg-[#2C5F5D] hover:text-white px-8 py-4 rounded-xl transition-all duration-200 transform hover:scale-[1.02] active:scale-95">
+                        <iconify-icon icon="solar:chat-line-linear" width="24"></iconify-icon>
+                        <span class="font-heading font-semibold text-lg uppercase tracking-wide" data-lang="es">Mensaje Rápido</span>
+                        <span class="font-heading font-semibold text-lg uppercase tracking-wide lang-hidden" data-lang="en">Quick Message</span>
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="flex flex-wrap gap-6 pt-2 opacity-80">
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield-check" class="lucide lucide-shield-check w-5 h-5 text-[#2C5F5D]"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                        <span class="text-sm font-medium text-gray-600">Licensed FL #CAC18123</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="award" class="lucide lucide-award w-5 h-5 text-[#2C5F5D]"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>
+                        <span class="text-sm font-medium text-gray-600">Fully Insured</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" class="lucide lucide-clock w-5 h-5 text-[#2C5F5D]"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                        <span class="text-sm font-medium text-gray-600">10+ Years Exp.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 relative h-full min-h-[400px] flex items-center justify-center fade-in-up visible" style="animation-delay: 0.2s;">
+                <div class="absolute top-10 right-10 w-64 h-64 bg-[#F28C38]/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-10 left-10 w-64 h-64 bg-[#2C5F5D]/10 rounded-full blur-3xl"></div>
+                
+                <!-- Main Image Container -->
+                <div class="relative z-10 w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&amp;w=2069&amp;auto=format&amp;fit=crop" alt="Técnico hispano reparando aire acondicionado" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                
+                    <!-- Floating Review Card -->
+                    <div class="absolute bottom-6 right-6 bg-white/95 backdrop-blur-md p-4 rounded-xl shadow-lg border border-gray-100 max-w-[240px] animate-[bounce_3s_infinite]">
+                        <div class="flex items-center gap-1 mb-1">
+                            <i data-lucide="star" class="w-4 h-4 text-[#F28C38] fill-[#F28C38]" stroke-width="1.5"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#F28C38] fill-[#F28C38]" stroke-width="1.5"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#F28C38] fill-[#F28C38]" stroke-width="1.5"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#F28C38] fill-[#F28C38]" stroke-width="1.5"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#F28C38] fill-[#F28C38]" stroke-width="1.5"></i>
+                        </div>
+                        <p class="text-sm font-bold text-[#2B2B2B] mb-0.5">5.0 Calificación</p>
+                        <p class="text-xs text-gray-500">Basado en 50+ reseñas verificadas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. BRAND CAROUSEL -->
+<section class="py-20 bg-white border-t border-gray-100 overflow-hidden">
+    <div class="container mx-auto px-6 text-center mb-12 fade-in-up">
+        <h2 class="font-heading font-semibold text-3xl md:text-4xl text-[#2B2B2B] mb-3 tracking-tight">Expertos en Cada
+            Marca</h2>
+        <h3 class="font-heading font-medium text-lg text-[#2C5F5D] tracking-tight">¿No ves tu marca? Llámanos,
+            trabajamos con todas.</h3>
+    </div>
+
+    <div class="relative w-full overflow-hidden py-8">
+        <div class="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-white to-transparent z-10 pointer-events-none">
+        </div>
+        <div class="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-white to-transparent z-10 pointer-events-none">
+        </div>
+
+        <div class="flex animate-scroll-brands">
+            <!-- SET 1 -->
+            <div class="flex-shrink-0 mx-12 group cursor-pointer">
+                <img src="https://i.imgur.com/hXep6zO.png" alt="Carrier" class="h-12 w-auto object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+            </div>
+
+            <div class="flex-shrink-0 mx-12 group cursor-pointer">
+                <img src="https://i.imgur.com/TTPWYC5.jpeg" alt="Trane" class="h-12 w-auto object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+            </div>
+
+            <div class="flex-shrink-0 mx-12 group cursor-pointer">
+                <img src="https://i.imgur.com/MwCySrk.png" alt="Lennox" class="h-12 w-auto object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+            </div>
+
+            <div class="flex-shrink-0 mx-12 group cursor-pointer">
+                <img src="https://i.imgur.com/Eh0bChT.png" alt="Rheem" class="h-12 w-auto object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                </div>
+
+            <div class="flex-shrink-0 mx-12 group cursor-pointer">
+                <img src="https://i.imgur.com/OwJnGg5.png" alt="York" class="h-12 w-auto object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+            </div>
+
+            <div class="flex-shrink-0 mx-12 group cursor-pointer">
+                <img src="https://i.imgur.com/eO0Q2bP.png" alt="Goodman" class="h-12 w-auto object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+            </div>
+
+            <!-- SET 2 - DUPLICADO EXACTO para loop infinito -->
+            <div class="flex-shrink-0 mx-12 group cursor-pointer">
+                <img src="https://i.imgur.com/hXep6zO.png" alt="Carrier" class="h-12 w-auto object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+            </div>
+
+            <div class="flex-shrink-0 mx-12 group cursor-pointer">
+                <img src="https://i.imgur.com/TTPWYC5.jpeg" alt="Trane" class="h-12 w-auto object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+            </div>
+
+            <div class="flex-shrink-0 mx-12 group cursor-pointer">
+                <img src="https://i.imgur.com/MwCySrk.png" alt="Lennox" class="h-12 w-auto object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+            </div>
+
+            <div class="flex-shrink-0 mx-12 group cursor-pointer">
+                <img src="https://i.imgur.com/Eh0bChT.png" alt="Rheem" class="h-12 w-auto object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+            </div>
+
+            <div class="flex-shrink-0 mx-12 group cursor-pointer">
+                <img src="https://i.imgur.com/OwJnGg5.png" alt="York" class="h-12 w-auto object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+            </div>
+
+            <div class="flex-shrink-0 mx-12 group cursor-pointer">
+                <img src="https://i.imgur.com/eO0Q2bP.png" alt="Goodman" class="h-12 w-auto object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- TRUST METRICS BAR -->
+        <section class="bg-[#2C5F5D] py-16 text-white relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-dots-pattern"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+                    <!-- Metric 1 -->
+                    <div class="flex flex-col items-center gap-3 fade-in-up group cursor-default">
+                        <div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center group-hover:bg-[#F28C38] transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="home" class="lucide lucide-home w-8 h-8 text-white"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="font-heading font-bold text-4xl lg:text-5xl tracking-tight counter" data-target="150">0</div>
+                            <p class="text-white/80 font-medium text-sm uppercase tracking-wider" data-lang="es">Familias Atendidas</p>
+                            <p class="text-white/80 font-medium text-sm uppercase tracking-wider lang-hidden" data-lang="en">Families Served</p>
+                        </div>
+                    </div>
+                    <!-- Metric 2 -->
+                    <div class="flex flex-col items-center gap-3 fade-in-up group cursor-default" style="animation-delay: 0.1s;">
+                        <div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center group-hover:bg-[#F28C38] transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" class="lucide lucide-clock w-8 h-8 text-white"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="font-heading font-bold text-4xl lg:text-5xl tracking-tight">24/7</div>
+                            <p class="text-white/80 font-medium text-sm uppercase tracking-wider" data-lang="es">Servicio Disponible</p>
+                            <p class="text-white/80 font-medium text-sm uppercase tracking-wider lang-hidden" data-lang="en">Service Available</p>
+                        </div>
+                    </div>
+                    <!-- Metric 3 -->
+                    <div class="flex flex-col items-center gap-3 fade-in-up group cursor-default" style="animation-delay: 0.2s;">
+                        <div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center group-hover:bg-[#F28C38] transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" class="lucide lucide-star w-8 h-8 text-white"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="font-heading font-bold text-4xl lg:text-5xl tracking-tight counter" data-target="100">0</div>
+                            <p class="text-white/80 font-medium text-sm uppercase tracking-wider" data-lang="es">% Satisfacción</p>
+                            <p class="text-white/80 font-medium text-sm uppercase tracking-wider lang-hidden" data-lang="en">% Satisfaction</p>
+                        </div>
+                    </div>
+                    <!-- Metric 4 -->
+                    <div class="flex flex-col items-center gap-3 fade-in-up group cursor-default" style="animation-delay: 0.3s;">
+                        <div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center group-hover:bg-[#F28C38] transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="zap" class="lucide lucide-zap w-8 h-8 text-white"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="font-heading font-bold text-4xl lg:text-5xl tracking-tight">2-4h</div>
+                            <p class="text-white/80 font-medium text-sm uppercase tracking-wider" data-lang="es">Tiempo Respuesta</p>
+                            <p class="text-white/80 font-medium text-sm uppercase tracking-wider lang-hidden" data-lang="en">Response Time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="py-20 bg-[#FAF7F2] bg-grid-pattern">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+                    <h2 class="font-heading font-bold text-4xl lg:text-5xl text-[#2B2B2B] mb-4 tracking-tight" data-lang="es">Cómo Ayudamos a Familias</h2>
+                    <h2 class="font-heading font-bold text-4xl lg:text-5xl text-[#2B2B2B] mb-4 tracking-tight lang-hidden" data-lang="en">How We Help Families</h2>
+                    <p class="text-[#2C5F5D] text-xl lg:text-2xl italic font-medium" data-lang="es">"Soy Juan Ramón, y arreglo problemas de AC de la manera correcta - no de la manera cara."</p>
+                    <p class="text-[#2C5F5D] text-xl lg:text-2xl italic font-medium lang-hidden" data-lang="en">"I'm Juan Ramón, and I fix AC problems the right way - not the expensive way."</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Repair -->
+                    <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border-l-4 border-[#D4654F] hover:border-l-[8px] transition-all duration-300 hover:-translate-y-2 fade-in-up">
+                        <div class="w-14 h-14 rounded-full bg-[#D4654F]/10 flex items-center justify-center mb-6 text-[#D4654F] group-hover:scale-110 transition-transform">
+                            <iconify-icon icon="solar:wrench-linear" width="32" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <h3 class="font-heading font-bold text-2xl text-[#2B2B2B] mb-4" data-lang="es">¿Se Te Dañó el Aire?</h3>
+                        <h3 class="font-heading font-bold text-2xl text-[#2B2B2B] mb-4 lang-hidden" data-lang="en">AC Broken?</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed text-sm" data-lang="es">Diagnostico el problema real. La mayoría de problemas se arreglan el mismo día.</p>
+                        <p class="text-gray-600 mb-6 leading-relaxed text-sm lang-hidden" data-lang="en">I diagnose the real problem. Most issues are fixed same-day.</p>
+                        <a href="#contact" class="flex items-center gap-2 text-[#D4654F] font-bold text-sm uppercase tracking-wider group-hover:gap-4 transition-all">
+                            <span data-lang="es">Ayuda de Emergencia</span><span data-lang="en" class="lang-hidden">Emergency Help</span>
+                            <iconify-icon icon="solar:arrow-right-linear" width="18"></iconify-icon>
+                        </a>
+                    </div>
+                    <!-- Maintenance -->
+                    <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border-l-4 border-[#2C5F5D] hover:border-l-[8px] transition-all duration-300 hover:-translate-y-2 fade-in-up" style="animation-delay: 0.1s">
+                        <div class="w-14 h-14 rounded-full bg-[#2C5F5D]/10 flex items-center justify-center mb-6 text-[#2C5F5D] group-hover:scale-110 transition-transform">
+                            <iconify-icon icon="solar:calendar-mark-linear" width="32" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <h3 class="font-heading font-bold text-2xl text-[#2B2B2B] mb-4" data-lang="es">Mantenimiento</h3>
+                        <h3 class="font-heading font-bold text-2xl text-[#2B2B2B] mb-4 lang-hidden" data-lang="en">Maintenance</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed text-sm" data-lang="es">Previene averías costosas y baja la luz con limpieza regular.</p>
+                        <p class="text-gray-600 mb-6 leading-relaxed text-sm lang-hidden" data-lang="en">Prevent costly breakdowns and lower bills with regular cleaning.</p>
+                        <a href="#contact" class="flex items-center gap-2 text-[#2C5F5D] font-bold text-sm uppercase tracking-wider group-hover:gap-4 transition-all">
+                            <span data-lang="es">Agendar</span><span data-lang="en" class="lang-hidden">Schedule</span>
+                            <iconify-icon icon="solar:arrow-right-linear" width="18"></iconify-icon>
+                        </a>
+                    </div>
+                    <!-- Install -->
+                    <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border-l-4 border-[#7C9885] hover:border-l-[8px] transition-all duration-300 hover:-translate-y-2 fade-in-up" style="animation-delay: 0.2s">
+                        <div class="w-14 h-14 rounded-full bg-[#7C9885]/10 flex items-center justify-center mb-6 text-[#7C9885] group-hover:scale-110 transition-transform">
+                            <iconify-icon icon="solar:snowflake-linear" width="32" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <h3 class="font-heading font-bold text-2xl text-[#2B2B2B] mb-4" data-lang="es">Instalación</h3>
+                        <h3 class="font-heading font-bold text-2xl text-[#2B2B2B] mb-4 lang-hidden" data-lang="en">Installation</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed text-sm" data-lang="es">Tamaño y eficiencia correctos para tu hogar. Precios justos.</p>
+                        <p class="text-gray-600 mb-6 leading-relaxed text-sm lang-hidden" data-lang="en">Correct size and efficiency for your home. Fair prices.</p>
+                        <a href="#contact" class="flex items-center gap-2 text-[#7C9885] font-bold text-sm uppercase tracking-wider group-hover:gap-4 transition-all">
+                            <span data-lang="es">Cotizar</span><span data-lang="en" class="lang-hidden">Quote</span>
+                            <iconify-icon icon="solar:arrow-right-linear" width="18"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING SECTION -->
+        <section id="pricing" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 fade-in-up">
+                    <h2 class="font-heading font-bold text-4xl lg:text-5xl text-[#2B2B2B] mb-3" data-lang="es">Precios Honestos y Transparentes</h2>
+                    <h2 class="font-heading font-bold text-4xl lg:text-5xl text-[#2B2B2B] mb-3 lang-hidden" data-lang="en">Honest &amp; Transparent Pricing</h2>
+                    <h3 class="font-heading font-medium text-xl text-[#2C5F5D]" data-lang="es">Sin Cargos Ocultos. Sin Sorpresas. Solo Precios Justos.</h3>
+                    <h3 class="font-heading font-medium text-xl text-[#2C5F5D] lang-hidden" data-lang="en">No Hidden Fees. No Surprises. Just Fair Prices.</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <!-- Card 1 -->
+                    <div class="bg-[#FAF7F2] p-8 rounded-2xl border border-gray-100 hover:border-[#2C5F5D] transition-all text-center group fade-in-up">
+                        <div class="w-12 h-12 mx-auto bg-white rounded-full flex items-center justify-center text-[#2C5F5D] mb-4 shadow-sm">
+                            <iconify-icon icon="solar:magnifer-linear" width="24"></iconify-icon>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2" data-lang="es">Revisión Diagnóstica</h4>
+                        <h4 class="font-bold text-gray-900 mb-2 lang-hidden" data-lang="en">Diagnostic Check</h4>
+                        <div class="text-[#D4654F] font-heading font-bold text-4xl mb-2">GRATIS*</div>
+                        <p class="text-xs text-gray-500 mb-4" data-lang="es">*Solo pagas si apruebas la reparación</p>
+                        <p class="text-xs text-gray-500 mb-4 lang-hidden" data-lang="en">*You only pay if you approve repair</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-2xl border-2 border-[#F28C38] relative text-center shadow-lg transform scale-105 z-10 fade-in-up" style="animation-delay: 0.1s">
+                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#F28C38] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Popular</div>
+                        <div class="w-12 h-12 mx-auto bg-[#F28C38]/10 rounded-full flex items-center justify-center text-[#F28C38] mb-4">
+                            <iconify-icon icon="solar:wrench-linear" width="24"></iconify-icon>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2" data-lang="es">Reparación Básica</h4>
+                        <h4 class="font-bold text-gray-900 mb-2 lang-hidden" data-lang="en">Basic Repair</h4>
+                        <div class="text-[#2B2B2B] font-heading font-bold text-3xl mb-2"><span class="text-sm align-top">$</span>149<span class="text-sm font-normal text-gray-400">+</span></div>
+                        <p class="text-xs text-gray-500" data-lang="es">Precio final según diagnóstico</p>
+                        <p class="text-xs text-gray-500 lang-hidden" data-lang="en">Final price per diagnosis</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-[#FAF7F2] p-8 rounded-2xl border border-gray-100 hover:border-[#7C9885] transition-all text-center group fade-in-up" style="animation-delay: 0.2s">
+                        <div class="w-12 h-12 mx-auto bg-white rounded-full flex items-center justify-center text-[#7C9885] mb-4 shadow-sm">
+                            <iconify-icon icon="solar:calendar-mark-linear" width="24"></iconify-icon>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2" data-lang="es">Mantenimiento</h4>
+                        <h4 class="font-bold text-gray-900 mb-2 lang-hidden" data-lang="en">Maintenance</h4>
+                        <div class="text-[#2B2B2B] font-heading font-bold text-3xl mb-2"><span class="text-sm align-top">$</span>89</div>
+                        <p class="text-xs text-gray-500" data-lang="es">Limpieza e inspección 21 puntos</p>
+                        <p class="text-xs text-gray-500 lang-hidden" data-lang="en">21-point cleaning &amp; inspection</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-[#FAF7F2] p-8 rounded-2xl border border-gray-100 hover:border-[#D4654F] transition-all text-center group fade-in-up" style="animation-delay: 0.3s">
+                        <div class="w-12 h-12 mx-auto bg-white rounded-full flex items-center justify-center text-[#D4654F] mb-4 shadow-sm">
+                            <iconify-icon icon="solar:bolt-circle-linear" width="24"></iconify-icon>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2" data-lang="es">Emergencia</h4>
+                        <h4 class="font-bold text-gray-900 mb-2 lang-hidden" data-lang="en">Emergency</h4>
+                        <div class="text-[#2B2B2B] font-heading font-bold text-3xl mb-2"><span class="text-sm font-normal text-gray-400">+</span><span class="text-sm align-top">$</span>75</div>
+                        <p class="text-xs text-gray-500" data-lang="es">Cargo adicional fuera de horario</p>
+                        <p class="text-xs text-gray-500 lang-hidden" data-lang="en">After-hours surcharge</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#7C9885] rounded-2xl p-8 text-center text-white max-w-3xl mx-auto shadow-xl fade-in-up">
+                    <h4 class="font-heading font-bold text-xl mb-2 flex items-center justify-center gap-2">
+                        <iconify-icon icon="solar:card-linear" width="24"></iconify-icon>
+                        <span data-lang="es">FINANCIAMIENTO DISPONIBLE</span>
+                        <span data-lang="en" class="lang-hidden">FINANCING AVAILABLE</span>
+                    </h4>
+                    <p class="mb-6 opacity-90 max-w-xl mx-auto" data-lang="es">Planes de pago flexibles. Aprobación en minutos. No dejes que el presupuesto te impida mantenerte fresco.</p>
+                    <p class="mb-6 opacity-90 max-w-xl mx-auto lang-hidden" data-lang="en">Flexible payment plans. Approval in minutes. Don't let budget stop you from staying cool.</p>
+                    <a href="#contact" class="inline-block border border-white text-white hover:bg-white hover:text-[#7C9885] px-6 py-2 rounded-lg font-medium transition-colors" data-lang="es">Pregunta Sobre Financiamiento →</a>
+                    <a href="#contact" class="inline-block border border-white text-white hover:bg-white hover:text-[#7C9885] px-6 py-2 rounded-lg font-medium transition-colors lang-hidden" data-lang="en">Ask About Financing →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAP SECTION -->
+        <section id="map" class="py-20 bg-[#FAF7F2] bg-grid-pattern">
+            <div class="container mx-auto px-6">
+                <h2 class="font-heading font-bold text-4xl lg:text-5xl text-[#2B2B2B] text-center mb-16 tracking-tight" data-lang="es">Sirviendo Todo Miami-Dade</h2>
+                <h2 class="font-heading font-bold text-4xl lg:text-5xl text-[#2B2B2B] text-center mb-16 tracking-tight lang-hidden" data-lang="en">Serving All Miami-Dade</h2>
+
+                <div class="grid lg:grid-cols-5 gap-12">
+                    <!-- Map Graphic -->
+                    <div class="lg:col-span-2 relative h-[500px] bg-[#e6ded1] rounded-3xl overflow-hidden shadow-inner border-4 border-white fade-in-up">
+                        <!-- Abstract Map Visualization -->
+                        <div class="absolute inset-0 opacity-30 bg-[url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Miami-Dade_County_Florida_Incorporated_and_Unincorporated_areas_Hialeah_highlighted.svg/1200px-Miami-Dade_County_Florida_Incorporated_and_Unincorporated_areas_Hialeah_highlighted.svg.png')] bg-cover bg-center mix-blend-multiply"></div>
+                        
+                        <!-- Markers -->
+                        <div class="absolute top-[30%] left-[45%] map-marker cursor-pointer group" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                            <div class="bg-[#2C5F5D] w-4 h-4 rounded-full shadow-lg border-2 border-white animate-pulse"></div>
+                            <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-white px-2 py-1 rounded text-xs font-bold shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Hialeah</div>
+                        </div>
+                        <div class="absolute top-[40%] left-[35%] map-marker cursor-pointer group" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                            <div class="bg-[#2C5F5D] w-4 h-4 rounded-full shadow-lg border-2 border-white"></div>
+                            <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-white px-2 py-1 rounded text-xs font-bold shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Doral</div>
+                        </div>
+                        <div class="absolute top-[50%] left-[50%] map-marker cursor-pointer group" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                            <div class="bg-[#2C5F5D] w-4 h-4 rounded-full shadow-lg border-2 border-white"></div>
+                            <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-white px-2 py-1 rounded text-xs font-bold shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Coral Gables</div>
+                        </div>
+                        <div class="absolute top-[55%] right-[20%] map-marker cursor-pointer group" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                            <div class="bg-[#2C5F5D] w-4 h-4 rounded-full shadow-lg border-2 border-white"></div>
+                            <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-white px-2 py-1 rounded text-xs font-bold shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Miami Beach</div>
+                        </div>
+                        <div class="absolute bottom-[20%] left-[30%] map-marker cursor-pointer group" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                            <div class="bg-[#2C5F5D] w-4 h-4 rounded-full shadow-lg border-2 border-white"></div>
+                            <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-white px-2 py-1 rounded text-xs font-bold shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Homestead</div>
+                        </div>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="lg:col-span-3 flex flex-col justify-center space-y-8 fade-in-up" style="animation-delay: 0.1s">
+                        <p class="text-lg text-gray-600 leading-relaxed" data-lang="es">Vivo y trabajo en esta área. Conozco los desafíos únicos de nuestro clima - la humedad, el aire salado, las tormentas.</p>
+                        <p class="text-lg text-gray-600 leading-relaxed lang-hidden" data-lang="en">I live and work in this area. I know the unique challenges of our climate - the humidity, the salt air, the storms.</p>
+                        
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#2C5F5D]"></iconify-icon><span class="text-sm font-medium">Hialeah</span></div>
+                            <div class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#2C5F5D]"></iconify-icon><span class="text-sm font-medium">Kendall</span></div>
+                            <div class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#2C5F5D]"></iconify-icon><span class="text-sm font-medium">Doral</span></div>
+                            <div class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#2C5F5D]"></iconify-icon><span class="text-sm font-medium">Miami Beach</span></div>
+                            <div class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#2C5F5D]"></iconify-icon><span class="text-sm font-medium">Coral Gables</span></div>
+                            <div class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#2C5F5D]"></iconify-icon><span class="text-sm font-medium">Homestead</span></div>
+                            <div class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#2C5F5D]"></iconify-icon><span class="text-sm font-medium">Aventura</span></div>
+                            <div class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#2C5F5D]"></iconify-icon><span class="text-sm font-medium">Pinecrest</span></div>
+                            <div class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#2C5F5D]"></iconify-icon><span class="text-sm font-medium">Sweetwater</span></div>
+                        </div>
+
+                        <div class="bg-white border-l-4 border-[#F28C38] p-4 rounded-r-lg shadow-sm">
+                            <p class="text-sm font-semibold text-gray-700" data-lang="es">⚡ Para emergencias: típicamente 2-4 horas en cualquier parte de Miami-Dade</p>
+                            <p class="text-sm font-semibold text-gray-700 lang-hidden" data-lang="en">⚡ For emergencies: typically 2-4 hours anywhere in Miami-Dade</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl border border-gray-200">
+                            <label class="block text-sm font-bold text-gray-700 mb-2" data-lang="es">Verificar Servicio en tu Zona</label>
+                            <label class="block text-sm font-bold text-gray-700 mb-2 lang-hidden" data-lang="en">Check Service in Your Area</label>
+                            <div class="flex gap-2">
+                                <input type="text" placeholder="Zip Code (e.g. 33134)" class="flex-1 rounded-lg border-gray-300 border px-4 py-2 focus:ring-2 focus:ring-[#2C5F5D] outline-none">
+                                <button class="bg-[#2C5F5D] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#1a3a39] transition-colors" data-lang="es">Verificar</button>
+                                <button class="bg-[#2C5F5D] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#1a3a39] transition-colors lang-hidden" data-lang="en">Check</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-20 bg-[#2C5F5D] relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-dots-pattern"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center mb-12 fade-in-up">
+                    <h2 class="font-heading font-bold text-4xl text-white mb-4" data-lang="es">¿Listo Para Que Tu AC Se Arregle Bien?</h2>
+                    <h2 class="font-heading font-bold text-4xl text-white mb-4 lang-hidden" data-lang="en">Ready To Get Your AC Fixed Right?</h2>
+                    <p class="text-xl text-white/90" data-lang="es">Llama, manda mensaje, o llena el formulario. Yo contesto personalmente.</p>
+                    <p class="text-xl text-white/90 lang-hidden" data-lang="en">Call, text, or fill the form. I answer personally.</p>
+                </div>
+
+                <div class="flex flex-col md:flex-row justify-center gap-4 mb-12 fade-in-up">
+                    <a href="tel:+13054822349" class="bg-[#F28C38] hover:bg-[#d97526] text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 transform hover:-translate-y-1 transition-all shadow-lg">
+                        <iconify-icon icon="solar:phone-calling-bold" width="24"></iconify-icon>
+                        <span data-lang="es">LLAMAR AHORA</span><span data-lang="en" class="lang-hidden">CALL NOW</span>
+                    </a>
+                    <a href="https://wa.me/13054822349" target="_blank" class="bg-[#7C9885] hover:bg-[#6a8272] text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 transform hover:-translate-y-1 transition-all shadow-lg">
+                        <iconify-icon icon="logos:whatsapp-icon" width="24"></iconify-icon>
+                        WhatsApp
+                    </a>
+                    <a href="sms:+13054822349" class="border-2 border-white text-white hover:bg-white hover:text-[#2C5F5D] px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 transform hover:-translate-y-1 transition-all">
+                        <iconify-icon icon="solar:chat-round-line-bold" width="24"></iconify-icon>
+                        SMS
+                    </a>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-white rounded-2xl p-8 max-w-2xl mx-auto shadow-2xl fade-in-up" style="animation-delay: 0.1s">
+                    <h3 class="font-bold text-2xl text-[#2B2B2B] mb-6 text-center" data-lang="es">Obtén Cotización Rápida</h3>
+                    <h3 class="font-bold text-2xl text-[#2B2B2B] mb-6 text-center lang-hidden" data-lang="en">Get Quick Quote</h3>
+                    
+                    <form class="space-y-4" onsubmit="event.preventDefault(); this.innerHTML = '<div class=\'text-center py-12\'><iconify-icon icon=\'solar:check-circle-bold\' class=\'text-[#7C9885] mb-4\' width=\'64\'></iconify-icon><h3 class=\'text-2xl font-bold text-[#2B2B2B]\'>¡Gracias!</h3><p class=\'text-gray-600\'>Te contactaremos en menos de 2 horas.</p></div>'">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase mb-1" data-lang="es">Nombre</label>
+                                <label class="block text-xs font-bold text-gray-500 uppercase mb-1 lang-hidden" data-lang="en">Name</label>
+                                <input type="text" required="" class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#2C5F5D]">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase mb-1" data-lang="es">Teléfono</label>
+                                <label class="block text-xs font-bold text-gray-500 uppercase mb-1 lang-hidden" data-lang="en">Phone</label>
+                                <input type="tel" required="" class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#2C5F5D]">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase mb-1" data-lang="es">Código Postal</label>
+                                <label class="block text-xs font-bold text-gray-500 uppercase mb-1 lang-hidden" data-lang="en">Zip Code</label>
+                                <select required="" class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#2C5F5D]">
+                                    <option value="">Select Zip...</option>
+                                    <option>33010</option><option>33134</option><option>33146</option><option>Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase mb-1" data-lang="es">Servicio</label>
+                                <label class="block text-xs font-bold text-gray-500 uppercase mb-1 lang-hidden" data-lang="en">Service</label>
+                                <select class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#2C5F5D]">
+                                    <option data-lang="es">Reparación</option><option data-lang="es">Mantenimiento</option><option data-lang="es">Nuevo Sistema</option>
+                                    <option data-lang="en" class="lang-hidden">Repair</option><option data-lang="en" class="lang-hidden">Maintenance</option><option data-lang="en" class="lang-hidden">New System</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1" data-lang="es">Mensaje (Opcional)</label>
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1 lang-hidden" data-lang="en">Message (Optional)</label>
+                            <textarea rows="2" class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#2C5F5D]"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-[#F28C38] hover:bg-[#d97526] text-white font-bold py-4 rounded-xl shadow-lg transition-transform hover:scale-[1.01]" data-lang="es">Enviar Solicitud →</button>
+                        <button type="submit" class="w-full bg-[#F28C38] hover:bg-[#d97526] text-white font-bold py-4 rounded-xl shadow-lg transition-transform hover:scale-[1.01] lang-hidden" data-lang="en">Send Request →</button>
+                        
+                        <p class="text-center text-xs text-gray-400 mt-4 flex items-center justify-center gap-1">
+                            <iconify-icon icon="solar:lock-keyhole-linear"></iconify-icon>
+                            <span data-lang="es">Tu información está segura. Solo contacto sobre tu solicitud.</span>
+                            <span data-lang="en" class="lang-hidden">Your info is safe. I only contact regarding your request.</span>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="font-heading font-bold text-4xl text-[#2B2B2B] text-center mb-12 tracking-tight" data-lang="es">Preguntas Frecuentes</h2>
+                <h2 class="font-heading font-bold text-4xl text-[#2B2B2B] text-center mb-12 tracking-tight lang-hidden" data-lang="en">Frequently Asked Questions</h2>
+
+                <div class="space-y-4">
+                    <!-- Q1 -->
+                    <div class="border border-gray-200 rounded-xl bg-[#FAF7F2] overflow-hidden">
+                        <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none group" onclick="toggleAccordion(this)">
+                            <span class="font-bold text-[#2B2B2B] text-lg" data-lang="es">¿Qué tan rápido puedes venir en una emergencia?</span>
+                            <span class="font-bold text-[#2B2B2B] text-lg lang-hidden" data-lang="en">How fast can you come in an emergency?</span>
+                            <div class="bg-white rounded-full p-1 text-[#2B2B2B] group-hover:bg-[#D4654F] group-hover:text-white transition-colors">
+                                <iconify-icon icon="solar:add-linear" width="20" class="transition-transform duration-300 icon-plus"></iconify-icon>
+                            </div>
+                        </button>
+                        <div class="accordion-content bg-white">
+                            <div class="px-6 pb-6 text-gray-600 leading-relaxed border-l-4 border-[#2C5F5D]">
+                                <span data-lang="es">Generalmente llego entre 2 a 4 horas si llamas antes de las 2 PM. Para emergencias nocturnas, tengo disponibilidad limitada pero siempre contesto.</span>
+                                <span data-lang="en" class="lang-hidden">I generally arrive between 2 to 4 hours if you call before 2 PM. For night emergencies, I have limited availability but I always answer.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q2 -->
+                    <div class="border border-gray-200 rounded-xl bg-[#FAF7F2] overflow-hidden">
+                        <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none group" onclick="toggleAccordion(this)">
+                            <span class="font-bold text-[#2B2B2B] text-lg" data-lang="es">¿Por qué mi aire se congela?</span>
+                            <span class="font-bold text-[#2B2B2B] text-lg lang-hidden" data-lang="en">Why is my AC freezing?</span>
+                            <div class="bg-white rounded-full p-1 text-[#2B2B2B] group-hover:bg-[#D4654F] group-hover:text-white transition-colors">
+                                <iconify-icon icon="solar:add-linear" width="20" class="transition-transform duration-300 icon-plus"></iconify-icon>
+                            </div>
+                        </button>
+                        <div class="accordion-content bg-white">
+                            <div class="px-6 pb-6 text-gray-600 leading-relaxed border-l-4 border-[#2C5F5D]">
+                                <span data-lang="es">Comúnmente es por falta de flujo de aire (filtros sucios) o bajo nivel de refrigerante (fuga). Apágalo inmediatamente y llámame para evitar daños al compresor.</span>
+                                <span data-lang="en" class="lang-hidden">Commonly due to poor airflow (dirty filters) or low refrigerant (leak). Turn it off immediately and call me to prevent compressor damage.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q3 -->
+                    <div class="border border-gray-200 rounded-xl bg-[#FAF7F2] overflow-hidden">
+                        <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none group" onclick="toggleAccordion(this)">
+                            <span class="font-bold text-[#2B2B2B] text-lg" data-lang="es">¿Ofreces garantía en reparaciones?</span>
+                            <span class="font-bold text-[#2B2B2B] text-lg lang-hidden" data-lang="en">Do you offer warranty on repairs?</span>
+                            <div class="bg-white rounded-full p-1 text-[#2B2B2B] group-hover:bg-[#D4654F] group-hover:text-white transition-colors">
+                                <iconify-icon icon="solar:add-linear" width="20" class="transition-transform duration-300 icon-plus"></iconify-icon>
+                            </div>
+                        </button>
+                        <div class="accordion-content bg-white">
+                            <div class="px-6 pb-6 text-gray-600 leading-relaxed border-l-4 border-[#2C5F5D]">
+                                <span data-lang="es">Absolutamente. Todas las reparaciones tienen 1 año de garantía en mano de obra, más la garantía del fabricante en las piezas.</span>
+                                <span data-lang="en" class="lang-hidden">Absolutely. All repairs come with a 1-year labor warranty, plus the manufacturer's warranty on parts.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA BANNER -->
+        <section class="bg-[#2B2B2B] relative overflow-hidden py-24 text-center">
+            <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E');"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <h2 class="font-heading font-bold text-4xl lg:text-5xl text-white mb-8 tracking-tight" data-lang="es">Tu Aire. Tu Confort. Nuestra Promesa.</h2>
+                <h2 class="font-heading font-bold text-4xl lg:text-5xl text-white mb-8 tracking-tight lang-hidden" data-lang="en">Your Air. Your Comfort. Our Promise.</h2>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-6 mb-8">
+                    <a href="tel:+13054822349" class="bg-[#F28C38] hover:bg-[#d97526] text-white px-10 py-5 rounded-xl font-bold text-xl shadow-[0_0_20px_rgba(242,140,56,0.5)] hover:shadow-[0_0_30px_rgba(242,140,56,0.7)] transition-all animate-pulse">
+                        📞 305-482-2349
+                    </a>
+                    <a href="#contact" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#2B2B2B] px-10 py-5 rounded-xl font-bold text-xl transition-all">
+                        <span data-lang="es">💬 MENSAJE RÁPIDO</span><span data-lang="en" class="lang-hidden">💬 QUICK MESSAGE</span>
+                    </a>
+                </div>
+                <p class="text-white/60 text-sm uppercase tracking-widest" data-lang="es">Disponible 7 días a la semana • Inglés y Español • Todo Miami-Dade</p>
+                <p class="text-white/60 text-sm uppercase tracking-widest lang-hidden" data-lang="en">Available 7 days a week • English &amp; Spanish • All Miami-Dade</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#1a1a1a] text-gray-400 py-16 border-t border-white/5 font-light text-sm">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <!-- Col 1 -->
+            <div class="space-y-4">
+                <div class="flex items-center gap-2 mb-2">
+                    <div class="bg-[#D4654F] p-1.5 rounded-lg">
+                        <iconify-icon icon="solar:wrench-linear" width="20" class="text-white"></iconify-icon>
+                    </div>
+                    <span class="text-white font-bold tracking-tight text-lg">HERNANDEZ HVAC</span>
+                </div>
+                <p class="text-white font-medium">Juan Ramón Hernández</p>
+                <a href="tel:+13054822349" class="block hover:text-[#F28C38] transition-colors">📞 305-482-2349</a>
+                <a href="mailto:info@hernandezhvac.com" class="block hover:text-[#F28C38] transition-colors">📧 info@hernandezhvac.com</a>
+                <p>📍 Sirviendo Miami-Dade County</p>
+            </div>
+
+            <!-- Col 2 -->
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="#services" class="hover:text-white transition-colors">Servicios</a></li>
+                    <li><a href="#pricing" class="hover:text-white transition-colors">Precios</a></li>
+                    <li><a href="#testimonials" class="hover:text-white transition-colors">Testimonios</a></li>
+                    <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3 -->
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-wider">Horario</h4>
+                <p class="text-[#F28C38] font-medium mb-2">Servicio de Emergencia: 7 Días</p>
+                <ul class="space-y-2">
+                    <li class="flex justify-between"><span>Lun-Vie:</span> <span class="text-white">8am - 6pm</span></li>
+                    <li class="flex justify-between"><span>Sáb:</span> <span class="text-white">9am - 4pm</span></li>
+                    <li class="flex justify-between"><span>Dom:</span> <span class="text-white">Emergencias</span></li>
+                </ul>
+            </div>
+
+            <!-- Col 4 -->
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-wider">Social</h4>
+                <div class="flex gap-4 mb-4">
+                    <a href="#" class="bg-white/10 p-2 rounded-full hover:bg-[#F28C38] hover:text-white transition-colors"><iconify-icon icon="logos:facebook" width="20"></iconify-icon></a>
+                    <a href="#" class="bg-white/10 p-2 rounded-full hover:bg-[#F28C38] hover:text-white transition-colors"><iconify-icon icon="logos:instagram-icon" width="20"></iconify-icon></a>
+                    <a href="#" class="bg-white/10 p-2 rounded-full hover:bg-[#F28C38] hover:text-white transition-colors"><iconify-icon icon="logos:whatsapp-icon" width="20"></iconify-icon></a>
+                </div>
+                <p class="text-xs">Síguenos para tips y ofertas de temporada.</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+            <p>© 2026 Hernandez HVAC | Licenciado y Asegurado | Licencia FL #CAC123456</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CHATBOT WIDGET -->
+    <div id="chat-widget" class="fixed bottom-4 right-4 z-[9999]">
+        <!-- Toggle Button -->
+        <button onclick="toggleChat()" class="bg-[#F28C38] hover:bg-[#d97526] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110">
+            <iconify-icon icon="solar:chat-square-dots-bold" width="28"></iconify-icon>
+        </button>
+
+        <!-- Chat Window -->
+        <div id="chat-window" class="hidden absolute bottom-16 right-0 w-[320px] bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100 flex-col">
+            <!-- Header -->
+            <div class="bg-[#2C5F5D] p-4 flex justify-between items-center text-white">
+                <div class="flex items-center gap-2">
+                    <div class="bg-white/20 p-1.5 rounded-full"><iconify-icon icon="solar:user-bold" width="16"></iconify-icon></div>
+                    <span class="font-bold text-sm">Hernandez Assistant</span>
+                </div>
+                <button onclick="toggleChat()"><iconify-icon icon="solar:close-circle-linear" width="20"></iconify-icon></button>
+            </div>
+            
+            <!-- Body -->
+            <div class="p-4 h-[350px] overflow-y-auto bg-gray-50 flex flex-col gap-3">
+                <div class="self-start bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 max-w-[85%] text-sm">
+                    Hola! Soy el asistente virtual. ¿En qué puedo ayudarte hoy?
+                </div>
+                
+                <div class="grid gap-2 mt-2">
+                    <button class="text-left text-xs bg-white border border-[#2C5F5D]/20 text-[#2C5F5D] p-2 rounded-lg hover:bg-[#2C5F5D] hover:text-white transition-colors">🚨 Necesito reparación urgente</button>
+                    <button class="text-left text-xs bg-white border border-[#2C5F5D]/20 text-[#2C5F5D] p-2 rounded-lg hover:bg-[#2C5F5D] hover:text-white transition-colors">💰 Quiero una cotización</button>
+                    <button class="text-left text-xs bg-white border border-[#2C5F5D]/20 text-[#2C5F5D] p-2 rounded-lg hover:bg-[#2C5F5D] hover:text-white transition-colors">📅 Pregunta sobre mantenimiento</button>
+                </div>
+            </div>
+
+            <!-- Input -->
+            <div class="p-3 bg-white border-t border-gray-100 flex gap-2">
+                <input type="text" placeholder="Escribe un mensaje..." class="flex-1 text-sm bg-gray-100 rounded-full px-4 py-2 outline-none">
+                <button class="bg-[#2C5F5D] text-white p-2 rounded-full w-8 h-8 flex items-center justify-center"><iconify-icon icon="solar:plain-bold" width="16"></iconify-icon></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+       // Language Logic
+const langToggle = document.getElementById('langToggle');
+let currentLang = localStorage.getItem('lang') || 'es';
+
+const updateLanguage = () => {
+    const elsES = document.querySelectorAll('[data-lang="es"]');
+    const elsEN = document.querySelectorAll('[data-lang="en"]');
+
+    if (currentLang === 'es') {
+        elsES.forEach(el => el.classList.remove('lang-hidden'));
+        elsEN.forEach(el => el.classList.add('lang-hidden'));
+        document.documentElement.lang = 'es';
+    } else {
+        elsES.forEach(el => el.classList.add('lang-hidden'));
+        elsEN.forEach(el => el.classList.remove('lang-hidden'));
+        document.documentElement.lang = 'en';
+    }
+    localStorage.setItem('lang', currentLang);
+};
+
+langToggle.addEventListener('click', () => {
+    currentLang = currentLang === 'es' ? 'en' : 'es';
+    updateLanguage();
+});
+updateLanguage();
+
+        // Hero Underline Animation on Scroll
+const heroUnderlines = document.querySelectorAll('.hero-underline-animated');
+
+const underlineObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.classList.add('animate');
+            }, 300);
+        } else {
+            entry.target.classList.remove('animate');
+        }
+    });
+}, { threshold: 0.5, rootMargin: '0px' });
+
+heroUnderlines.forEach(el => underlineObserver.observe(el));
+
+// Header shrink
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const header = document.getElementById('main-header');
+    if(scrollY > 50) {
+        header.classList.add('h-16');
+        header.classList.remove('h-20');
+    } else {
+        header.classList.add('h-20');
+        header.classList.remove('h-16');
+    }
+});
+
+       
+
+        // Chatbot Toggle
+        function toggleChat() {
+            const chat = document.getElementById('chat-window');
+            chat.classList.toggle('hidden');
+            chat.classList.toggle('flex');
+        }
+
+        // Accordion
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.icon-plus');
+            
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                if (item !== content && item.style.maxHeight) {
+                    item.style.maxHeight = null;
+                    item.classList.remove('active');
+                    item.previousElementSibling.querySelector('.icon-plus').style.transform = 'rotate(0deg)';
+                }
+            });
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.classList.remove('active');
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.classList.add('active');
+                icon.style.transform = 'rotate(45deg)';
+            }
+        }
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Animate counters if present in this section
+                    if(entry.target.classList.contains('counter')) {
+                        const target = +entry.target.getAttribute('data-target');
+                        let count = 0;
+                        const inc = target / 50;
+                        const update = () => {
+                            if(count < target) {
+                                count += inc;
+                                entry.target.innerText = Math.ceil(count);
+                                requestAnimationFrame(update);
+                            } else {
+                                entry.target.innerText = target + (target === 100 ? '%' : '+');
+                            }
+                        };
+                        update();
+                    } else if (entry.target.querySelector('.counter')) {
+                         // Logic for parent container
+                         entry.target.querySelectorAll('.counter').forEach(c => {
+                            const target = +c.getAttribute('data-target');
+                            let count = 0;
+                            const inc = target / 50;
+                            const update = () => {
+                                if(count < target) {
+                                    count += inc;
+                                    c.innerText = Math.ceil(count);
+                                    requestAnimationFrame(update);
+                                } else {
+                                    c.innerText = target + (target === 100 ? '%' : '+');
+                                }
+                            };
+                            update();
+                         })
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+        
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+
+</body></html>
