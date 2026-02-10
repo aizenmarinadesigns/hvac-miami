@@ -124,8 +124,7 @@ animation-play-state: paused;
 
 /* 1. SISTEMA DE IDIOMAS 
    Oculta el texto del idioma no seleccionado sin afectar el diseño. */
-body.lang-en .lang-es { display: none !important; }
-body.lang-es .lang-en { display: none !important; }
+.lang-hidden { display: none !important; }
 
 /* 2. IDENTIDAD VISUAL (Scrollbar)
    Usa el verde de la marca #2C5F5D para un look premium. */
@@ -879,23 +878,36 @@ body.lang-es .lang-en { display: none !important; }
 
     <!-- Scripts -->
     <script>
-       // Language Logic
+      // Sistema de Idioma Híbrido (Limpia boxes y botones dobles)
 const langToggle = document.getElementById('langToggle');
 let currentLang = localStorage.getItem('lang') || 'es';
 
 const updateLanguage = () => {
-    const elsES = document.querySelectorAll('[data-lang="es"]');
-    const elsEN = document.querySelectorAll('[data-lang="en"]');
+    // Buscamos TODO: lo que usa data-lang y lo que usa clases lang-es/lang-en
+    const elements = document.querySelectorAll('.lang-es, .lang-en, [data-lang]');
 
+    elements.forEach(el => {
+        // Detectamos si el elemento es de español o inglés por cualquiera de los dos métodos
+        const isSpanish = el.classList.contains('lang-es') || el.getAttribute('data-lang') === 'es';
+        const isEnglish = el.classList.contains('lang-en') || el.getAttribute('data-lang') === 'en';
+
+        if (currentLang === 'es') {
+            if (isSpanish) el.classList.remove('lang-hidden');
+            if (isEnglish) el.classList.add('lang-hidden');
+        } else {
+            if (isSpanish) el.classList.add('lang-hidden');
+            if (isEnglish) el.classList.remove('lang-hidden');
+        }
+    });
+
+    // Actualizamos visualmente el botón ES | EN
     if (currentLang === 'es') {
-        elsES.forEach(el => el.classList.remove('lang-hidden'));
-        elsEN.forEach(el => el.classList.add('lang-hidden'));
-        document.documentElement.lang = 'es';
+        langToggle.innerHTML = '<span class="text-xs font-semibold text-[#2C5F5D]">ES</span><div class="w-px h-3 bg-gray-300"></div><span class="text-xs font-medium text-gray-400">EN</span>';
     } else {
-        elsES.forEach(el => el.classList.add('lang-hidden'));
-        elsEN.forEach(el => el.classList.remove('lang-hidden'));
-        document.documentElement.lang = 'en';
+        langToggle.innerHTML = '<span class="text-xs font-medium text-gray-400">ES</span><div class="w-px h-3 bg-gray-300"></div><span class="text-xs font-semibold text-[#2C5F5D]">EN</span>';
     }
+    
+    document.documentElement.lang = currentLang;
     localStorage.setItem('lang', currentLang);
 };
 
@@ -903,6 +915,8 @@ langToggle.addEventListener('click', () => {
     currentLang = currentLang === 'es' ? 'en' : 'es';
     updateLanguage();
 });
+
+// Arrancar la página con el idioma correcto
 updateLanguage();
 
         // Hero Underline Animation on Scroll
