@@ -154,14 +154,14 @@ animation-play-state: paused;
 
     <!-- FOMO BAR -->
     <div class="bg-[#F28C38] text-white h-10 flex items-center justify-center relative overflow-hidden z-[1000] shadow-sm">
-        <div class="absolute inset-0 flex items-center overflow-hidden">
-            <div class="animate-marquee font-heading font-semibold text-sm tracking-wide w-full text-center">
+        <div class="absolute inset-0 flex items-center overflow-hidden pl-4 pr-14">
+            <div class="animate-marquee font-heading font-semibold text-sm tracking-wide">
                 <span data-lang="es" class="">🔥 PROMOCIÓN: 10% de descuento en mantenimiento preventivo — Válido hasta fin de mes</span>
                 <span data-lang="en" class="lang-hidden">🔥 PROMO: 10% OFF Preventive Maintenance — Valid until end of month</span>
             </div>
         </div>
-        <button class="absolute right-4 top-1/2 -translate-y-1/2 hover:bg-white/20 rounded-full p-1 transition-colors" onclick="this.parentElement.style.display='none'">
-            <iconify-icon icon="solar:close-circle-linear" width="20" class="text-white"></iconify-icon>
+        <button class="absolute right-3 top-1/2 -translate-y-1/2 bg-white border border-[#D4654F]/30 rounded-full p-1 transition-colors hover:bg-[#D4654F]/10 shadow-sm" onclick="this.parentElement.style.display='none'" aria-label="Cerrar">
+            <iconify-icon icon="solar:close-circle-linear" width="18" class="text-[#D4654F]"></iconify-icon>
         </button>
     </div>
 
@@ -1507,11 +1507,11 @@ animation-play-state: paused;
                         <p class="text-sm text-gray-300 font-light mt-1" data-lang="es">Cubrimos toda Miami-Dade. Llámanos para confirmar.</p>
                         <p class="text-sm text-gray-300 font-light mt-1 lang-hidden" data-lang="en">We cover all of Miami-Dade. Call us to confirm.</p>
                     </div>
-                    <button class="px-5 py-2.5 bg-[#D4654F] hover:bg-[#c25843] text-white text-sm font-medium rounded-lg transition-all shadow-md flex items-center gap-2 whitespace-nowrap">
+                    <a href="#contact" class="px-5 py-2.5 bg-[#D4654F] hover:bg-[#c25843] text-white text-sm font-medium rounded-lg transition-all shadow-md flex items-center gap-2 whitespace-nowrap">
                         <span data-lang="es">Consultar</span>
                         <span data-lang="en" class="lang-hidden">Inquire</span>
                         <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
-                    </button>
+                    </a>
                 </div>
 
             </div>
